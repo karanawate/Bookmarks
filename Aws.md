@@ -12,7 +12,7 @@
   
   step2: save change file -- ctrl + s
   
-  step3: exit ctrol + s
+  step3: exit ctrol + x
   
   
   * how to tar compress tar file 
