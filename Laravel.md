@@ -33,3 +33,8 @@
 $customer = Customer::where('','')->orwhere('','')->get();
 
 
+$customer = Customer::find(1);
+$customer->delete();
+
+
+
