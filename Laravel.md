@@ -14,3 +14,19 @@
                 ->whereIn('user_role', [1, 2])
                 ->count();      
                 return view('admin.profile.all_admin', compact('getAdmins','adminCount'));
+
+
+
+* Elqueunt method using INSERT 
+
+ $customer       = new Customer;
+ $customer->name = $request->name;
+ $customer->save();
+
+ Elqueunt method using update
+
+ $customer        = Customer::find(1)
+ $customer->name  = $request->name;
+ $customer->save();
+
+ 
