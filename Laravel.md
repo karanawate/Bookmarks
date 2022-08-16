@@ -30,9 +30,11 @@
  $customer->save();
 
 
+* Model Elquent using SELECT method
+
 $customer = Customer::where('','')->orwhere('','')->get();
 
-
+* Model Elquent using DELETE method
 $customer = Customer::find(1);
 $customer->delete();
 
