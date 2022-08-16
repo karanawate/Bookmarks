@@ -29,4 +29,7 @@
  $customer->name  = $request->name;
  $customer->save();
 
- 
+
+$customer = Customer::where('','')->orwhere('','')->get();
+
+
