@@ -17,13 +17,13 @@
 
 
 
-* Elqueunt method using INSERT 
+* Model Elqueunt method using INSERT 
 
  $customer       = new Customer;
  $customer->name = $request->name;
  $customer->save();
 
- Elqueunt method using update
+ Model Elqueunt method using update
 
  $customer        = Customer::find(1)
  $customer->name  = $request->name;
@@ -37,6 +37,13 @@ $customer = Customer::where('','')->orwhere('','')->get();
 * Model Elquent using DELETE method
 $customer = Customer::find(1);
 $customer->delete();
+
+* Laravel provide all method are lower camel case
+   ->findOrFail();
+   ->paginate();
+   ->routeIs();
+   ->isMethod
+ 
 
 
 
