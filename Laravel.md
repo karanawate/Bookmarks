@@ -66,6 +66,9 @@ $customer->delete();
         'name' =>$request->name;
     ]);
 
+    * LARAVEL TURNARY OPERATOR IN ONE LINE 
+    {{  ucfirst($user->name) ? ucfirst($user->name): 'NA'  }}
+
 
  
 
