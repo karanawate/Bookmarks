@@ -7,3 +7,6 @@ Database Schema :  https://drawsql.app/
 
  * Get shortname as created at Eg jan feb march
       SELECT DATE_FORMAT(created_at, '%b') FROM posts GROUP BY created_at;
+
+* sql mode enable in sql 
+      set global sql_mode='';
