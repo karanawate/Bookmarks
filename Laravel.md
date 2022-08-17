@@ -43,6 +43,20 @@ $customer->delete();
    ->paginate();
    ->routeIs();
    ->isMethod
+
+   LARAVEL ELQUENT QUERY INSERT UPDATE DELETE
+
+   $user = User::create([
+                'name' =>$request->name
+           ]);
+
+           
+   $user = User::where('id',$id)->update([
+                'name' =>$request->name
+           ]);
+
+  $delete = User::where('',$id)->delete();
+        
  
 
 
