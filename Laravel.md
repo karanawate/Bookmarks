@@ -44,7 +44,7 @@ $customer->delete();
    ->routeIs();
    ->isMethod
 
-   LARAVEL ELQUENT QUERY INSERT UPDATE DELETE
+   *LARAVEL ELQUENT QUERY INSERT UPDATE DELETE
 
    $user = User::create([
                 'name' =>$request->name
@@ -56,7 +56,17 @@ $customer->delete();
            ]);
 
   $delete = User::where('',$id)->delete();
-        
+
+  * LARAVEL First, find, firstOrCreate  METHOD IN RETURN ONE ROW 
+    $user = User::where('id',$request->id)->first();
+
+    $user = user::find();
+
+    $user = User::firstOrCreate([
+        'name' =>$request->name;
+    ]);
+
+
  
 
 
