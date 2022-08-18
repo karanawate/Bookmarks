@@ -69,6 +69,11 @@ $customer->delete();
     * LARAVEL TURNARY OPERATOR IN ONE LINE 
     {{  ucfirst($user->name) ? ucfirst($user->name): 'NA'  }}
 
+    * LARAVEL IN GET QUERY  IN SQL 
+        DB::enableQueryLog();
+        query
+        dd(DB::getQueryLog());
+
 
  
 
