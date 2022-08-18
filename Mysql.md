@@ -10,3 +10,7 @@ Database Schema :  https://drawsql.app/
 
 * sql mode enable in sql 
       set global sql_mode='';
+
+* sql in WHERE IN condition (Note: multiple categories where condition (1,43,4))
+
+SELECT * from users WHERE 9 IN (category_id) 
