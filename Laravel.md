@@ -74,6 +74,23 @@ $customer->delete();
         query
         dd(DB::getQueryLog());
 
+    * LARAEL JOIN QUERY DB
+
+    $saveditems  = DB::table('saved_videos')
+                    ->join('users', 'users.id', '=', 'saved_videos.fk_user_id')
+                    ->select('saved_videos.fk_user_id', 'users.*')
+                    ->groupBy('saved_videos.fk_user_id')
+                    ->paginate(20);
+
+
+* Lavevel dump() function very usefull when get return query
+
+$saveditems  = DB::table('saved_videos')
+                    ->join('users', 'users.id', '=', 'saved_videos.fk_user_id')
+                    ->select('saved_videos.fk_user_id', 'users.*')
+                    ->groupBy('saved_videos.fk_user_id')
+                    ->dump()
+                    ->paginate(20);
 
  
 
