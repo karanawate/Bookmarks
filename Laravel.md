@@ -94,5 +94,10 @@ $saveditems  = DB::table('saved_videos')
 
  
 
+CHAINING METHOD USING whereRow query
+$posts = Post::query();
+$posts->whereRow("SELEC DATE(start_challenge_at BETWEE DATE_ADD( DATE(NOW() ), INTERVAL -7 DAY) AND DATE(NOW() )");
+$getPosts = $posts->get();
+
 
 
