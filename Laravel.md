@@ -100,4 +100,32 @@ $posts->whereRow("SELEC DATE(start_challenge_at BETWEE DATE_ADD( DATE(NOW() ), I
 $getPosts = $posts->get();
 
 
+---------------------------
+
+CRON JOB IN LARAVEL
+      step 1: php artisan make:command DemoCron --command=demo:cron 
+               file created:   app/Console/Commands/DemoCron.php
+
+      step2: app/Console/Kernel.php
+        add cmd:
+                    protected $commands = [
+                        Commands\DemoCron::class,
+                    ];
+       step3: php artisan schedule:run
+
+    manully working per minitue working job
+ CRON JOB IN AWS COMMDD
+ step1: RUN COMMAND : sudo crontab -e  
+
+ step2: * * * * * cd /var/www/html/btc
+
+ 
+
+
+
+
+
+
+
+
 
