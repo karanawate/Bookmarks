@@ -121,11 +121,13 @@ CRON JOB IN LARAVEL
 
  
 
-
-
-
-
-
+LARAVEL IN TRY CATCH USING 
+try{
+    try your code
+}catch(\Exception $e)
+{
+    return redirect()->back()->with('true',$e->getMessage());
+}
 
 
 
