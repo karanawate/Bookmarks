@@ -18,3 +18,6 @@
   * how to tar compress tar file 
     tar -zcvf file.tar.gz /path/to/filename
 
+* tar unzip 
+* tar -zxvf file.tar.gz
+
