@@ -21,3 +21,6 @@
 * tar unzip 
 * tar -zxvf file.tar.gz
 
+compress file in zip  put file /var/www/html/
+sudo tar -czvf nightshades_18_04_2023.tar.gz nightshades
+
