@@ -59,6 +59,40 @@
    step 1:<input matInput type="email" name="email" ngModel #email="ngModel" placeholder="dfdf"  required> 
    
    {{ email.valid }}
+
+
+
+   ---------------------------
+   
+* how to form state class  use ngvalid and nginvalid property
+{{ email.invalid }} bydefault true
+{{email.valid }} bedefault false
+{[email.untouched }} by default true
+{{email.touched }} bye default false 
+
+* how to form state class  of show errors in json
+{{email.errors | json }}
+
+* how to show only required in of any input of email Angular
+<input type="text" required/>
+<mat-error *ngIf="email.errors?.required">email is required</mat-error>
+
+* angular in email property use email is not valid
+<mat-error *ngIf="email.errors?.email">email is not valid</mat-error>
+
+
+* max-lenth and actull lenth want in angular 
+<mat-form-field>
+        <input matInput type="email" name="email" ngModel email #email="ngModel" placeholder="dfdf" minlength="3"  required>
+        <mat-error *ngIf="email.errors?.required">email is required</mat-error>
+        <mat-error *ngIf="email.errors?.minlength">
+          your email must have minimum {{ email.errors?.minlength.requiredLength }} chars,
+          but it only has {{email.errors?.minlength.actualLength}}.
+        </mat-error>
+        <mat-error *ngIf="email.errors?.email">email is not valid</mat-error>
+      </mat-form-field>
+	  
+	  ---------------------------------------------
   
   
   
