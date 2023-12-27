@@ -93,6 +93,55 @@
       </mat-form-field>
 	  
 	  ---------------------------------------------
+  * ngsubmit directive how to use in Angular
+		step 1: button as submit propert eg: <button type="submit" />
+
+		step2: form as ngsubmit proprty Eg: (ngSubmit)="login(loginform,$event)" 
+
+		step 3: 
+
+		login(loginForm: NgForm, submit)
+		{
+		console.log(submit);
+		}
+		
+		
+ * how to disable button with valid form is true in Aungular
+		 step 1: button as submit propert eg: <button type="submit" [disabled]="!valid.loginForm"/>
+		 
+		 step 2: form as ngsubmit proprty Eg: (ngSubmit)="login(loginform,$event)" 
+		 
+		 step 3: 
+		 
+		 login(loginForm: NgForm, submit)
+				{
+				console.log(submit);
+				}
+		
+	* ngModelChange how to use in Aungular
+
+		step 1: <input type="text" (onChangeModel)="onEmailChange($even)" />
+		
+		step2: in Ts file 
+		onEmailChange(change)
+		{
+			console.log(change)
+		}
+		
+    * NgModeloptions have two property submit change is by
+
+    [ngModelOptions]="{updateOn: 'submit'}"  (ngModelChange)="onEmailChange($event)" 	
+	
+
+	
+	* angular in ngsubmit and ngform direece
+	
+	- ngsubmit is form submit  on submit click 
+	
+	- ngform is on click on button type as button 
+	
+	
+	=--------------------------------------------------------------------------------------------------
   
   
   
